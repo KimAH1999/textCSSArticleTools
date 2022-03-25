@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <title>Article Web Page</title>
+  <!--Style can also be added inside <head>-->
+  <!--This style section is for text-transform properties-->
+  <style>
+    p.uppercase {
+        text-transform: uppercase;
+    }
+
+    p.lowercase {
+        text-transform: lowercase;
+    }
+
+    p.capitalize {
+        text-transform: capitalize;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="text-left">
+           <ul>
+            <li> <a class="active" href="#home">Home</a></li>
+            <li> <a href="https://github.com/">Github</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#contact">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2>Example Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+        <!--Html Text Formating example -->
+        <h4>Using the text-transform property</h4>
+        <p class="uppercase">This text is transformed to uppercase.</p>
+        <p class="lowercase">This text is transformed to lowercase.</p>
+        <p class="capitalize">This text is capitalized.</p>
+        <p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses the reader.</p>
+        <p>Then, example underneath shows how to add a blockquote with citation.</p>
+        
+        <figure>
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+            </blockquote>
+            <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+        </figure>
+        <!--In elemental parent or siblings can contain class style-->
+        <h1 style="font-style:italic">text formatting</h1>
+        <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+        <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+        
+    </div>
+</body>
+
+</html>
