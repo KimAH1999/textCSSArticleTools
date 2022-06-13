@@ -25,20 +25,20 @@
 
 <body>
   <header>
-    <nav class="text-left">
+    <nav class="text-left" style="width:20px"></nav>
       <ul>
-        <li> <a class="active" href="#home">Main page</a></li>
+        <li> <a class="active">Main page</a></li>
         <li> <a href="https://github.com/">MyGithub</a></li>
         <li> <a href="https://github.com/KimAH1999/PortfolioReact.git">Portfolio</a></li>
         <li> <a href="mailto:kimaguilar2017@gmail.com">Gmail Contact</a></li>
       </ul>
     </nav>
   </header>
-  <div>
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+  <div style="margin-left: 20%">
+    <button class="tablink" onclick="openPage('Home', this, 'rgb(5, 5, 5)')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'rgb(5, 5, 5)')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'rgb(5, 5, 5)')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'rgb(5, 5, 5)')">About</button>
 
     <div id="Home" class="tabcontent">
       <h3>Home</h3>
@@ -117,7 +117,7 @@
       <p lang="bg">This is another region<q>example</q>.</p>
     </div>
   </div>
-  <!--Script function for quick javascript command made for main tab in header. Not mini tab.-->
+  <!--Script function for quick javascript command made for colorful tab in header. Not mini tab.-->
   <script>
     function openPage(pageName, elmnt, color) {
       var i, tabcontent, tablinks;
