@@ -10,60 +10,132 @@
   <!--This style section is for text-transform properties-->
   <style>
     p.uppercase {
-        text-transform: uppercase;
+      text-transform: uppercase;
     }
 
     p.lowercase {
-        text-transform: lowercase;
+      text-transform: lowercase;
     }
 
     p.capitalize {
-        text-transform: capitalize;
+      text-transform: capitalize;
     }
-</style>
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav class="text-left">
-           <ul>
-            <li> <a class="active" href="#home">Home</a></li>
-            <li> <a href="https://github.com/">Github</a></li>
-            <li> <a href="#portfolio">Portfolio</a></li>
-            <li> <a href="#contact">Contact</a></li>
-           </ul>
-        </nav>
-    </header>
-<!--Content Section-->
-    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-        <h2>Example Fixed Full-height Side Nav</h2>
-        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-        <!--Html Text Formating example -->
-        <h4>Using the text-transform property</h4>
-        <p class="uppercase">This text is transformed to uppercase.</p>
-        <p class="lowercase">This text is transformed to lowercase.</p>
-        <p class="capitalize">This text is capitalized.</p>
-        <p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses the reader.</p>
-        <p>Then, example underneath shows how to add a blockquote with citation.</p>
-        <!--Blockquote example, useful for articles or portfolio-->
-        <figure>
-            <blockquote cite="https://www.linkedin.com/learning/html-essential-training-4/quotes?autoplay=true&resume=false">
-                <p>HTML essential training example on inline quote and blockquote.</p>
-            </blockquote>
-            <figcaption>—Jen Simmons, <cite>Linkedin Learning</cite></figcaption>
-        </figure>
-        <!--In elemental parent or siblings can contain class style-->
-        <h1 style="font-style:italic">text formatting</h1>
-        <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
-        The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
-        <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
-        <!--English to Something else -->
-        <h5>Quotes/Lang="fr bg" exmaples under: (͠≖ ͜ʖ͠≖)👌</h5>
-        <p>Hello, <q>this is a cool skill to play with</q>.</p>
-        <p lang="fr">This is also <q>fun to learn about and how other languages uses these like our quotes</q>.</p>
-        <p lang="bg">This is another region<q>example</q>.</p>
+  <header>
+    <nav class="text-left">
+      <ul>
+        <li> <a class="active" href="#home">Main page</a></li>
+        <li> <a href="https://github.com/">MyGithub</a></li>
+        <li> <a href="https://github.com/KimAH1999/PortfolioReact.git">Portfolio</a></li>
+        <li> <a href="mailto:kimaguilar2017@gmail.com">Gmail Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
     </div>
+
+    <div id="News" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+    </div>
+  </div>
+  <!--HTML example in adding tabs(Just as english formatting is important, so is coding grammer/formating)-->
+  <div class="mytabs">
+    <!--Tab Example 1 for English Notes for coding-->
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Table Example 1</label>
+    <div class="tab">
+      <h2>Often time, projects require detailed english specifics for web pages.</h2>
+      <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25%
+          width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long
+          (for example if it has over 50 links inside of it).</p>
+      </div>
+    </div>
+    <!--Tab Example 2 for English Notes for coding-->
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Table Example 2</label>
+    <div class="tab">
+      <h2>This repository is helpful to see different formatting and example on hand.</h2>
+      <!--Html Text Formating example -->
+      <h4>Using the text-transform property</h4>
+      <p class="uppercase">This text is transformed to uppercase.</p>
+      <p class="lowercase">This text is transformed to lowercase.</p>
+      <p class="capitalize">This text is capitalized.</p>
+      <p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses the
+        reader.</p>
+      <p>Then, example underneath shows how to add a blockquote with citation.</p>
+    </div>
+    <!--Tab Example 3 for English Notes for coding-->
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">Table Example 3</label>
+    <div class="tab">
+      <h2>Blockquotes in figures can be handy! Adding proper cite formate is also essencial.</h2>
+      <!--Blockquote example, useful for articles or portfolio-->
+      <figure>
+        <blockquote
+          cite="https://www.linkedin.com/learning/html-essential-training-4/quotes?autoplay=true&resume=false">
+          <p>HTML essential training example on inline quote and blockquote.</p>
+        </blockquote>
+        <figcaption>—Jen Simmons, <cite>Linkedin Learning</cite></figcaption>
+      </figure>
+      <!--In elemental parent or siblings can contain class style-->
+      <h1 style="font-style:italic">text formatting</h1>
+      <p>This text is styled with some of the text formatting properties. The heading uses the text-align,
+        text-transform, and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified. The underline is removed
+        from this colored
+        <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.
+      </p>
+      <!--English grammer to different language grammer tools. -->
+      <h5>Quotes/Lang="fr bg" exmaples under: (͠≖ ͜ʖ͠≖)👌</h5>
+      <p>Hello, <q>this is a cool skill to play with</q>.</p>
+      <p lang="fr">This is also <q>fun to learn about and how other languages uses these like our quotes</q>.</p>
+      <p lang="bg">This is another region<q>example</q>.</p>
+    </div>
+  </div>
+  <!--Script function for quick javascript command made for main tab in header. Not mini tab.-->
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 </body>
 
 </html>
