@@ -1,75 +1,173 @@
+* {
+  box-sizing: border-box
+}
+
+/* Set height of body and the document to 100% */
+body {
+  background: #ccc;
+  font-family: 'Arial', 'Roboto', 'sans-serif';
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  margin: 10px 10px 30px 145px;
+  grid-auto-rows: auto;
+  color: white;
+  padding: 100px 20px;
+  height: auto;
+}
+
+#Home {
+  background-color: red;
+}
+
+#News {
+  background-color: green;
+}
+
+#Contact {
+  background-color: blue;
+}
+
+#About {
+  background-color: orange;
+}
+
+/*--------------------------------------------------------*/
 /*Navbar section*/
 /*Moves to right side*/
 .text-right {
-    text-align: right;
+  text-align: right;
 }
+
 /*Creates grey left long column*/
 ul {
-    text-indent: 50px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  text-indent: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
+
 /*Gets rid of blue highlint for link*/
 li a {
-    display: block;
-    color: #000;
-    padding: 7px 10px;
-    text-decoration: overline underline; 
+  display: block;
+  color: #000;
+  padding: 7px 10px;
+  text-decoration: overline underline;
 }
+
 /*adds active color in class name which is home in this ex */
 li a.active {
-    background-color: #04AA6D;
-    color: white;
+  background-color: #04AA6D;
+  color: white;
 }
+
 /*When hover, color/background is changed*/
 li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+  background-color: #555;
+  color: white;
 }
+
 /*--------------------------------------------------------*/
 /*border around article ex*/
 div {
-    border: 1px solid gray;
-    padding: 8px;
+  border: 1px solid gray;
+  padding: 8px;
 }
+
 h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #4CAF50;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
 }
-  
-p {
-    text-indent: 50px;
-    text-align: justify;
-    letter-spacing: 3px;
-}
-  
+
+
+
 a {
-    text-decoration: none;
-    color: #008CBA;
+  text-decoration: none;
+  color: #008CBA;
 }
+
 /* Blockquote ex*/
 blockquote {
-    margin: 0;
+  margin: 0;
 }
 
 blockquote p {
-    padding: 15px;
-    background: #eee;
-    border-radius: 5px;
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
 }
 
 blockquote p::before {
-    content: '\201C';
+  content: '\201C';
 }
 
 blockquote p::after {
-    content: '\201D';
+  content: '\201D';
 }
+
+/*--------------------------------------------------------*/
+/*tabs*/
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs label {
+  padding: 25px;
+  background: #e2e2e2;
+  font-weight: bold;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+}
+
+.mytabs .tab h2 {
+  font-size: 2em;
+}
+
+.mytabs input[type='radio']:checked+label+.tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked+label {
+  background: #fff;
+}
+
 /*--------------------------------------------------------*/
