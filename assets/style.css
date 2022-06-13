@@ -4,64 +4,67 @@
 
 /* Set height of body and the document to 100% */
 body {
-  background: #ccc;
+  background: rgb(17, 16, 16);
   font-family: 'Arial', 'Roboto', 'sans-serif';
 }
 
-/* Style tab links */
+
+/* Style tab links for Home/News/Contact/About */
 .tablink {
-  background-color: #555;
+  background-color: rgb(20, 60, 146);
   color: white;
   float: left;
   border: none;
-  outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 1px 10px 10px;
   font-size: 17px;
-  width: 25%;
+  width: 15em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: rgb(1, 120, 189);
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+/* Style the tab content */
 .tabcontent {
-  margin: 10px 10px 30px 145px;
-  grid-auto-rows: auto;
-  color: white;
-  padding: 100px 20px;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #Home {
-  background-color: red;
+  background-color: rgba(37, 175, 255, 0.533);
 }
 
 #News {
-  background-color: green;
+  background-color: rgba(37, 175, 255, 0.533);
 }
 
 #Contact {
-  background-color: blue;
+  background-color: rgba(37, 175, 255, 0.533);
 }
 
 #About {
-  background-color: orange;
+  background-color: rgba(37, 175, 255, 0.533);
 }
 
 /*--------------------------------------------------------*/
 /*Navbar section*/
 /*Moves to right side*/
-.text-right {
-  text-align: right;
+.text-left {
+  text-align: left;
 }
 
 /*Creates grey left long column*/
 ul {
-  text-indent: 50px;
+  text-indent: 30px;
   list-style-type: none;
-  margin: 0;
+  margin: 1px 0px 0px -9px;
   padding: 0;
   width: 20%;
   background-color: #f1f1f1;
@@ -74,7 +77,7 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 7px 10px;
+  padding: 15px;
   text-decoration: overline underline;
 }
 
@@ -135,9 +138,9 @@ blockquote p::after {
 .mytabs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 25px;
+  max-width: 60%;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .mytabs input[type="radio"] {
