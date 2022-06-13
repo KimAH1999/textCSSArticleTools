@@ -60,7 +60,7 @@ body {
   text-align: left;
 }
 
-/*Creates grey left long column*/
+/*Creates left long column*/
 ul {
   text-indent: 30px;
   list-style-type: none;
@@ -73,7 +73,7 @@ ul {
   overflow: auto;
 }
 
-/*Gets rid of blue highlint for link*/
+/*Gets rid of blue highlint for link when hovered to different color*/
 li a {
   display: block;
   color: #000;
@@ -94,7 +94,7 @@ li a:hover:not(.active) {
 }
 
 /*--------------------------------------------------------*/
-/*border around article ex*/
+/*border around article ex and sizing on letters*/
 div {
   border: 1px solid gray;
   padding: 8px;
@@ -105,8 +105,6 @@ h1 {
   text-transform: uppercase;
   color: #4CAF50;
 }
-
-
 
 a {
   text-decoration: none;
@@ -133,7 +131,8 @@ blockquote p::after {
 }
 
 /*--------------------------------------------------------*/
-/*tabs*/
+/*Table example 1-3 and alignment/padding wanted*/
+/*Educational coding tabs (example)*/
 
 .mytabs {
   display: flex;
@@ -171,6 +170,47 @@ blockquote p::after {
 
 .mytabs input[type="radio"]:checked+label {
   background: #fff;
+}
+/*Table example 4*/
+/*Ex:01*//* Only on click, link will change to color selected underneath*/
+a:active {
+  color: pink;
+}
+
+/*Ex:02*//*In container,the items of #'s  listed will flex row in reversal direction*/
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid red;
+}
+
+/*Ex:03,Color will appear yellow using class name*/
+.example {
+  color: yellow;
+}
+
+/*Ex:04,Correct way to color paragraph two  outside the section element*/
+section + r {
+  color:blue;
+}
+/* This doesnt work at all => p + section {color:blue;}
+/*This makes all blue => p {color:blue;}*/
+/*This will make paragraph one blue => section > p {color: blue;} */
+
+/*Ex:05,To make <p> ¶.01</p> red*/
+r:first-of-type {
+  color:red;
+}
+/*This makes <p>¶.02</p> blue => p {color:blue;}*/
+
+/*Ex:06,Primary color for href link in Ex:06*/
+a {
+  color: var(--color, orange);
+}
+
+/*Ex:07, P3 and P4 is blue*/
+h2 ~ p {
+  color: blue;
 }
 
 /*--------------------------------------------------------*/
