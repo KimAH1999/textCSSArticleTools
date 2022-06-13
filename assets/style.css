@@ -77,7 +77,7 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 15px;
+  padding: 5px;
   text-decoration: overline underline;
 }
 
@@ -174,3 +174,12 @@ blockquote p::after {
 }
 
 /*--------------------------------------------------------*/
+/*Ads/ rectangle side container */
+#absolute {
+  width: 19%;
+  height: 70%;
+  background-color: #FFD7C2;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
